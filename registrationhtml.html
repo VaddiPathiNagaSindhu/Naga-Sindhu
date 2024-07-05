@@ -1,0 +1,129 @@
+<html lang="en">
+<head>
+<title>Registration Form</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+    <body>
+        <div class="main">
+            <h1 style=text-align:center;>Registration Form</h1>
+            
+            <form action="" onsubmit="validate()">
+            <fieldset>
+                <legend style=text-align:center;>Registration Form</legend>
+            <label> Firstname:</label><br>
+            <input type="text" id="firstname" placeholder="Firstname" ><br><br>
+            <label> Lastname:</label><br>
+            <input type="text" id="lastname" placeholder="Lastname"><br><br>
+            <label> Fathername:</label><br>
+            <input type="text" id="fathername" placeholder="Fathername"><br><br>
+            <label> Mothername:</label><br>
+            <input type="text" id="mothername" placeholder="Mothername"><br><br>
+            <label> Email:</label><br>
+            <input type="email"  id="email" placeholder="Email"><br><br>
+            <label> Password</label><br>
+            <input type="password" id="password" placeholder="Password"><br><br>
+            <label>Gender:</label><br>
+            <input type="radio" id="gender">Male<br>
+            <input type="radio" id="gender">Female<br><br>
+            <label>College:</label><br>
+            <select>
+                <option>AITS-Rajampet</option>
+                <option>AITS-Kadapa</option>
+                <option>AITS-Tirupati</option>
+                <option>AITS-Hyderabad</option>
+                <option>RGM</option>
+                <option>KLU</option>
+                <option>Parul</option>
+                <option>MBU</option>
+            </select><br><br>
+            <label>Branch:</label><br>
+            <select>
+                <option>CSE</option>
+                <option>ECE</option>
+                <option>EEE</option>
+                <option>CIVIL</option>
+                <option>MECH</option>
+                <option>AIDS</option>
+                <option>AIML</option>
+            </select><br><br>
+            <label>Date of joining:</label><br>
+            <input type="date" id="date" placeholde="Date"><br><br>
+            <label>Year:</label><br>
+            <input type="year" id="year" placeholder="Year"><br><br>
+            <label>End date:</label><br>
+            <input type="date" id="date" placeholder="Date"><br><br>
+            <label>Mobile no:</label><br>
+            <input type="text" id="text" placeholder="Mobile no"><br><br>
+            <label>Address field:</label><br>
+            <textarea rows="5" cols="20" placeholder="Address"></textarea><br><br>
+            <button type="Submit">submit</button>
+            <button type="Reset">reset</button>
+        </fieldset>
+        </form>
+        </div>
+        <script>
+             function validate(){
+                var firstname=document.getElementById("firstname");
+                var lastname=document.getElementById("lastname");
+                var fathername=document.getElementById("fathername");
+                var mothername=document.getElementById("mothername");
+                var email=document.getElementById("email");
+                var password=document.getElementById("password");
+                var pw=document.getElementById("password").value;
+                var gender=document.getElementById("gender");
+                var date=document.getElementById("date");
+                var year=document.getElementById("year");
+                var date=document.getElementById("date");
+                var text=document.getElementById("text");
+                if(firstname.value=="")
+                {
+                    alert("enter firstname");
+                }
+                else if(lastname.value=="")
+                {
+                    alert("enter lastname");
+                }
+                else if(fathername.value=="")
+                {
+                    alert("enter fathername");
+                }
+                else if(mothername.value=="")
+                {
+                    alert("enter mothername");
+                }
+                else if(email.value=="")
+                {
+                    alert("enter email");
+                }
+                else if(password.value=="")
+                {
+                    alert("enter password");
+                if(pw.length<8)
+                {
+                    alert("password must have 8 characters");
+                }
+                }
+                else if(gender.value=="")
+                {
+                    alert("enter gender");
+                }
+                else if(date.value=="")
+                {
+                    alert("enter date");
+                }
+                else if(year.value=="")
+                {
+                    alert("enter year");
+                }
+                else if(date.value=="")
+                {
+                    alert("enter date");
+                }
+                else if(text.value=="")
+                {
+                    alert("enter text");
+                }
+             }
+        </script>
+    </body>
+</html>
